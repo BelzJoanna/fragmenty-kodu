@@ -1,0 +1,89 @@
+#message{
+    text-align: center;
+    background-color: var(--custom-color-green);
+    padding: 1px;
+}
+#message p{
+    margin: 5px;
+    color: #fff;
+}
+#message,
+.section-contact .acf-notice,
+.section-contact form .acf-fields{
+    max-width: 780px;
+    margin: auto;
+}
+.section-contact form .acf-fields .acf-field{
+    padding: 0;
+    margin-bottom: 10px;
+    border-color: transparent;
+}
+.section-contact form .acf-fields .acf-field .acf-label label{
+    display: block;
+    font-weight: normal;
+    margin: 0 0 3px 7px;
+    padding: 0;
+    font-size: 16px;
+    color: #9E9FA2;
+}
+.section-contact form .acf-fields .acf-field .acf-input input{
+    border: none;
+    border-bottom: 3px solid #D8D8D8;
+    height: 62px;
+}
+.section-contact form .acf-fields .acf-field .acf-input input[type="checkbox"]{
+    height: 40px;
+    width: 16px;
+    left: 1px;
+    margin-right: 13px;
+    top: -9px;
+    border-radius: 0;
+    position: absolute;
+}
+.section-contact form .acf-fields .acf-field .acf-input textarea{
+    border: none;
+    border-bottom: 3px solid #D8D8D8;
+}
+.acf-field[data-width] + .acf-field[data-width]{
+    border-color: transparent;
+}
+.section-contact form .acf-fields .acf-field .acf-label .acf-required{
+    display: none;
+}
+.section-contact .acf-form-submit{
+    text-align: center;
+}
+.section-contact .acf-form-submit input{
+    background-color: var(--custom-color-green);
+    color: #fff;
+    border: none;
+    padding: 16px 37px;
+    margin-top: 22px;
+    font-size: 16px;
+}
+.section-contact .container-consent{
+    padding-top: 40px;
+    padding-bottom: 63px;
+}
+.section-contact .container-consent .acf-label{
+    display: none;
+}
+.section-contact .container-consent .acf-checkbox-list label{
+    display: flex;
+    align-items: flex-start;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #9E9FA2;
+    padding-left: 32px;
+}
+.section-contact .container-consent .acf-fields.-border{
+    border: none;
+    background-color: transparent;
+}
+.section-contact .acf-left-field{
+    margin-right: 1%;
+}
+
+.section-contact .acf-right-field{
+    margin-left: 1%;
+}
