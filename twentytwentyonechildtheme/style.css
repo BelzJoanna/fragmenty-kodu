@@ -1,0 +1,275 @@
+/* 
+Theme Name:		 Twenty Twenty One Child Theme
+Template:		 twentytwentyone
+Version:		 1.0.0
+Text Domain:	 Twenty-Twenty-One-child
+-------------------------------------------------------------- */ 
+
+/* ogólne */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#main.site-main{
+    padding: 0 0 0 0;
+}
+body, h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Barlow Condensed', sans-serif!important;
+} 
+h3{
+    position: relative;
+}
+h3:after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 120px;
+    background: #ffffff7d;
+    margin: auto;
+    margin-top: 15px;
+}
+h3:before{
+    content: '';
+    background-image: url(http://localhost/portfolio/wp-content/uploads/2022/06/triangles.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    height: 24px;
+    width: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1b1e2a;
+    bottom: -12px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* header */
+header{
+    position: absolute;
+}
+/* menu */
+#masthead{
+    height: 100vh;
+    background-color: #283449;
+    padding: 10px;
+    position: fixed;
+    width: 100px;
+}
+#masthead #primary-menu-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100px;
+}
+#site-navigation{
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
+}
+#primary-menu-list .menu-item{
+    overflow: hidden;
+    height: 3em;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#primary-menu-list .menu-item a{
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    padding: 15px;
+    text-decoration: none;
+    color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+}
+#primary-menu-list .menu-item:hover a{
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+#primary-menu-list .menu-item a:focus{
+    background-color: transparent;
+}
+#primary-menu-list .menu-item a:before{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 15px;
+    color: #fff;
+    -webkit-transform: translate3d(-50%,0,0);
+    -moz-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
+    width: 100%;
+    text-align: center;
+    font-size: 14px;;
+}
+#menu-item-36 a{
+    background-image: url(/portfolio/wp-content/uploads/2022/06/home-2.png);
+}
+#primary-menu-list #menu-item-36 a:before{
+    content: 'Home';
+}
+#menu-item-37 a{
+    background-image: url(/portfolio/wp-content/uploads/2022/06/user.png);
+}
+#primary-menu-list #menu-item-37 a:before{
+    content: 'O mnie';
+}
+#menu-item-38 a{
+    background-image: url(/portfolio/wp-content/uploads/2022/06/alarm.png);
+}
+#primary-menu-list #menu-item-38 a:before{
+    content: 'Skills';
+}
+#menu-item-39 a{
+    background-image: url(/portfolio/wp-content/uploads/2022/06/writing.png);
+}
+#primary-menu-list #menu-item-39 a:before{
+    content: 'Projekty';
+}
+#menu-item-40 a{
+    background-image: url(/portfolio/wp-content/uploads/2022/06/email-1.png);
+}
+#primary-menu-list #menu-item-40 a:before{
+    content: 'Kontakt';
+}
+/* strona główna */
+.jb-home-page-template{
+    padding-left: 100px;
+}
+/* strona główna - header */
+.jb-header-banner{
+    display: flex;
+    height: 100vh;
+}
+.jb-header-banner .jb-header-left-section{
+    width: 40%;
+}
+.jb-header-banner .jb-header-left-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.jb-header-banner .jb-header-right-section{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.jb-header-banner .jb-header-right-section img.jb-header-icon{
+    height: 50px;
+    width: 50px;
+}
+.jb-header-banner .jb-header-icon-section{
+    position: relative;
+    margin-bottom: 30px;
+}
+.jb-header-banner .jb-header-icon-section:after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 70px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: rotateZ(45deg) translateX(-67%) translateY(1%);
+}
+.jb-header-banner .jb-header-left-section:before{
+    content: '';
+    background-image: url(http://localhost/portfolio/wp-content/uploads/2022/06/trojkat-zolty.svg);
+    height: 39vw;
+    width: 39vw;
+    position: absolute;
+    display: block;
+    top: 4vw;
+    left: 8vw;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jb-header-banner .jb-header-left-section::after{
+    content: '';
+    background-image: url(http://localhost/portfolio/wp-content/uploads/2022/06/trojkat-niebieski.svg);
+    height: 45vw;
+    width: 45vw;
+    position: absolute;
+    display: block;
+    top: 15vw;
+    left: 10vw;
+    z-index: -2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(60deg);
+}
+/* o mnie */
+.jb-section-about-me{
+    background-color: #1b1e2a;
+}
+.jb-section-about-me > div{
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+.jb-section-about-me h3{
+    margin-bottom: 40px;
+}
+.jb-section-about-me .jb-desc p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* skills */
+.js-section-skills{
+    max-width: 1240px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+.jb-skills{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 40px;
+}
+.jb-skills .jb-single-skill{
+    position: relative;
+    height: 140px;
+    display: grid;
+}
+.jb-skills .jb-single-skill img{
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    opacity: .1;
+}
+.jb-skills .jb-single-skill span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-weight: 600;
+    transition-duration: .4s;
+}
+.jb-skills .jb-single-skill p{
+    line-height: 1.2;
+    transition-duration: .4s;
+    height: 0;
+    overflow: hidden;
+}
+.jb-skills .jb-single-skill:hover p{
+    height: auto;
+}
+.jb-skills .jb-single-skill:hover span{
+    position: relative;
+}
